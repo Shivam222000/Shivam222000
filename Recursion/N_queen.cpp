@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Solution{
-private:
+
 public:
 bool isSafe(int row,int col,vector<string> board,int N){
    int duprow=row;
@@ -59,5 +59,14 @@ public:
 
 };
 int main(){
-
+    int n;
+    cin>>n;
+    vector<vector<string>> ans;
+   Solution obj;
+   ans=obj.N_queen(n);
+   for(auto it:ans){
+    for(auto ans:it){
+        cout<<ans;
+    }
+   }
 }

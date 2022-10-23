@@ -1,0 +1,1 @@
+{"name":"Local: elevator","url":"c:\\Users\\DELL\\Desktop\\DSA\\codeforces\\elevator.cpp","tests":[{"id":1662993887043,"input":"3\n1 2 3\n3 1 2\n3 2 1","output":"1\n3\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\DELL\\Desktop\\DSA\\codeforces\\elevator.cpp","group":"local","local":true}

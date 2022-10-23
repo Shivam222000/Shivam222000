@@ -1,0 +1,22 @@
+Solution : 3 Optimal Solution: Kadane’s Algorithm 
+
+Intuition: Basically this problem can be done in linear time complexity with Kadane’s algorithm along with that will also get the subarray which is giving the largest positive-sum. 
+
+Approach: 
+
+-> We will have the following variables in the beginning : 
+
+msf – max so far, meh – max sum ending at ith index, start – to get the starting index of ans’s subarray, end – to get the ending index of ans’s subarray. 
+
+-> Traverse the array from starting and add the ith element to max_end_here(meh) , now we will check that adding the ith element gives greater value than max_so_far(msf) or not , if yes then we will update our msf and also update the starting and ending index(initially starting index is zero) . 
+
+for(int i=0;i<nums.size();i++){ 
+    meh+=nums[i]; 
+
+    if(meh>msf){ msf=meh; start=s; end=i; } 
+
+    if(meh<0){meh=0; s=i+1;} 
+} 
+->Now in this step, we will print the answer subarray using the start and end variables.
+
+->Return the largest subarray sum that is:- msf. 
